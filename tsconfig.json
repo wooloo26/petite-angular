@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": false,
+        "alwaysStrict": true,
+        "allowJs": false,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "esModuleInterop": true,
+        "removeComments": false,
+        "sourceMap": false,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "declaration": true,
+        "baseUrl": ".",
+        "outDir": "temp",
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "types": ["vite/client"],
+        "rootDir": ".",
+        "paths": {
+            "src/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*"]
+}
