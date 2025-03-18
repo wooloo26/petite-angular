@@ -17,6 +17,7 @@
         "esModuleInterop": true,
         "removeComments": false,
         "sourceMap": false,
+        "experimentalDecorators": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
         "declaration": true,
