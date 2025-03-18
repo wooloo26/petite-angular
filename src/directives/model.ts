@@ -100,7 +100,7 @@ export const model: Directive<
 
         listen(el, 'compositionstart', onCompositionStart)
         listen(el, 'compositionend', onCompositionEnd)
-        listen(el, modifiers?.['lazy'] ? 'change' : 'input', () => {
+        listen(el, modifiers?.lazy ? 'change' : 'input', () => {
             if ((el as any).composing) return
             assign(resolveValue(el.value))
         })

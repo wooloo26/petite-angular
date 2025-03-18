@@ -27,7 +27,7 @@ export const bind: Directive<Element & { _class?: string }> = ({
     effect(() => {
         let value = get()
         if (arg) {
-            if (modifiers?.['camel']) {
+            if (modifiers?.camel) {
                 arg = camelize(arg)
             }
             setProp(el, arg, value, prevValue)

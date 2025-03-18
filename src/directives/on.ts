@@ -58,8 +58,8 @@ export const on: Directive = ({ el, get, exp, arg, modifiers }) => {
     if (modifiers) {
         // map modifiers
         if (arg === 'click') {
-            if (modifiers['right']) arg = 'contextmenu'
-            if (modifiers['middle']) arg = 'mouseup'
+            if (modifiers.right) arg = 'contextmenu'
+            if (modifiers.middle) arg = 'mouseup'
         }
 
         const raw = handler

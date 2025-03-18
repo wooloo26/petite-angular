@@ -18,9 +18,13 @@ export interface DirectiveContext<T = Element> {
     effect: typeof rawEffect
     exp: string
     arg?: string
-    modifiers?: Record<string, true>
+    modifiers?: Modifier<
+        'camel' | 'lazy' | 'trim' | 'number' | 'right' | 'middle'
+    >
     ctx: Context
 }
+
+export type Modifier<T extends string> = Partial<Record<T, true>>
 
 export const builtInDirectives: Record<string, Directive<any>> = {
     bind,
